@@ -1,5 +1,5 @@
 :root{ /*declaração de variáveis; PASSANDO O MOUSE EM CIMA DAS CORES VOCÊ CONSEGUE MUDÁ-LAS*/
-    --cor-de-fundo: #1E1E1E; 
+    --cor-de-fundo: #1e1e1e; 
     --verde: #6FFF57; 
     --branco: #FFFFFF; 
     --botao-ativo: #3A375E; 
@@ -31,7 +31,9 @@ body{ /*define estilização geral do conteúdo da página*/
     color: var(--verde); 
 }
 .botao{ /*classe botao no HTML*/
-    font-family: "Chakra Petch", sans-serif; /*tipo/família da fonte*/
+    font-family: "Kode Mono", monospace; /*define a fonte utilizada na página*/
+    font-optical-sizing: auto; 
+    font-style: normal;
     background-color: var(--botao-inativo); /*var declara a variável criada em root*/
     color: var(--branco);
     display: flex;
@@ -71,4 +73,23 @@ body{ /*define estilização geral do conteúdo da página*/
 }
 .aba-conteudo.ativo{
     display: block;
+}
+.aba-conteudo{
+    display: none;
+}
+.aba-conteudo-titulo-principal{ 
+    font-size: 28px;
+    text-align: center;
+}
+.aba-conteudo-titulo-secundario{ 
+    text-align: center;
+    color: var(--verde); 
+    text-transform: uppercase;
+}
+.contador{
+    font-size: 20px;
+    text-align: center;
+}
+.relogio{
+    width: 11%;
 }
